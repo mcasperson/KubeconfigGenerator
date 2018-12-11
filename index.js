@@ -23,7 +23,7 @@ users:
       config:
         client-id: "get me from lastpass"
         client-secret: "get me from lastpass"
-        id-token: ${request.headers["authorization"]}
+        id-token: ${request.headers["authorization"].substring("Bearer ".length)}
         idp-issuer-url: https://accounts.google.com
       name: oidc`)
 }
