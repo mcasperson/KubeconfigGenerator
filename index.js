@@ -21,8 +21,8 @@ users:
   user:
     auth-provider:
       config:
-        client-id: "get me from lastpass"
-        client-secret: "get me from lastpass"
+        client-id: "get me from lastpass - Hosted 2.0 Google Open ID Credentials"
+        client-secret: "get me from lastpass - Hosted 2.0 Google Open ID Credentials"
         id-token: ${request.headers["authorization"].substring("Bearer ".length)}
         idp-issuer-url: https://accounts.google.com
       name: oidc`)
